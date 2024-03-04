@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <h1>Products</h1>
+    <ul>
+      <% products.forEach(product => { %>
+      <li>
+        <h2><%= product.name %></h2>
+        <p>Price: $<%= product.price %></p>
+        <p>Description: <%= product.description %></p>
+        <p>Color: <%= product.color %></p>
+        <p>Created At: <%= product.createdAt %></p>
+      </li>
+      <% }); %>
+    </ul>
+  </body>
+</html>

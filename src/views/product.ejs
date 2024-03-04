@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <h1><%= requestedProduct.name %></h1>
+    <img
+      src="<%= requestedProduct.image %>"
+      alt="<%= requestedProduct.name %>"
+    />
+    <p><%= requestedProduct.description %></p>
+    <p>Price: $<%= requestedProduct.price %></p>
+    <p>Color: <%= requestedProduct.color %></p>
+    <p>Created At: <%= requestedProduct.createdAt %></p>
+  </body>
+</html>
